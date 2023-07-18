@@ -12,6 +12,12 @@ jobs:
   ox-block-mode:
     runs-on: ubuntu-latest
     steps:
+      - name: OX TEST DEV
+        with:
+          ox_debug_mode: true
+          ox_host_url: "https://dev-api.test-k8s.ox.security"
+          ox_api_key: ${{ secrets.ORG_LAGUQUTSVFZG7FJ3_DEV }}
+        uses: yury-imbro-ox/ox-gh-action-test@main
       - name: OX Public PROD
         with:
           ox_debug_mode: true
