@@ -22,8 +22,4 @@ export class IncompleteSanitizationOfString {
     sanitize(input) {
         return input.replace('{', '').replace('}', '');
     }
-
-    bombasanitize(input) {
-        return input.replace('{', '').replace('}', '');
-    }
 }
