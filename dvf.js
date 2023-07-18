@@ -9,8 +9,8 @@ export class DynamicCodeExecution {
 }
 
 export class DenialOfServiceVulnerability {
-    replaceAll(str, find, replace) {
-        return str.replace(new RegExp(find, 'g'), replace);
+    replaceAll(string, find, replace) {
+        return string.replace(new RegExp(find, 'g'), replace);
     }
 }
 
