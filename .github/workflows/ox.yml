@@ -1,0 +1,21 @@
+name: workflow-with-ox-block-mode
+run-name: OX Block Mode Demo
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, reopened, synchronize]
+    branches:
+      - main
+jobs:
+  ox-block-mode:
+    runs-on: ubuntu-latest
+    steps:
+      - name: OX Public PROD
+        with:
+          ox_debug_mode: true
+          ox_api_key: ${{ secrets.OX_API_KEY_PRODUCTION }}
+        uses: oxsecurity/ox-security-scan@main
+      - name: Build
+        run: echo 'Building artifacts...'
