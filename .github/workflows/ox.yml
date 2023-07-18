@@ -15,7 +15,7 @@ jobs:
       - name: OX Public PROD
         with:
           ox_debug_mode: true
-          ox_api_key: ${{ secrets.OX_API_KEY_PRODUCTION }}
+          ox_api_key: ${{ secrets.ORG_L9NF65I47R1QILX6_PROD }}
         uses: oxsecurity/ox-security-scan@main
       - name: Build
         run: echo 'Building artifacts...'
