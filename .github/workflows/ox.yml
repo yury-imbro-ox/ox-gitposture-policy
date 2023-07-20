@@ -1,13 +1,6 @@
 name: workflow-with-ox-block-mode
 run-name: OX Block Mode Demo
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    types: [opened, reopened, synchronize]
-    branches:
-      - main
   merge_group:
     types: [checks_requested]
     branches:
