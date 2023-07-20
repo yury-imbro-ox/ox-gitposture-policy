@@ -2,7 +2,6 @@ name: workflow-with-ox-block-mode
 run-name: OX Block Mode Demo
 on:
   merge_group:
-    types: [checks_requested]
     branches:
       - main
 
