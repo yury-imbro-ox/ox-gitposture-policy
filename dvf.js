@@ -14,7 +14,7 @@ export class DenialOfServiceVulnerability {
         return str.replace(new RegExp(find, 'g'), replace);
     }
 
-    methodA() {}
+    method() {}
 }
 
 export class IncompleteSanitizationOfString {
