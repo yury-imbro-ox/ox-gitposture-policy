@@ -15,10 +15,10 @@ jobs:
           ox_host_url: "https://dev-api.test-k8s.ox.security"
           ox_api_key: ${{ secrets.ORG_LAGUQUTSVFZG7FJ3_DEV }}
         uses: yury-imbro-ox/ox-gh-action-test@main
-      - name: OX Public PROD
-        with:
-          ox_debug_mode: true
-          ox_api_key: ${{ secrets.ORG_L9NF65I47R1QILX6_PROD }}
-        uses: oxsecurity/ox-security-scan@main
-      - name: Build
-        run: echo 'Building artifacts...'
+      # - name: OX Public PROD
+      #   with:
+      #     ox_debug_mode: true
+      #     ox_api_key: ${{ secrets.ORG_L9NF65I47R1QILX6_PROD }}
+      #   uses: oxsecurity/ox-security-scan@main
+      # - name: Build
+      #   run: echo 'Building artifacts...'
