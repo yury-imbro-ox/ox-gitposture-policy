@@ -1,6 +1,7 @@
 name: ox-mg
 run-name: OX Block Mode Demo
 on:
+  pull_request:
   merge_group:
     branches:
       - main
