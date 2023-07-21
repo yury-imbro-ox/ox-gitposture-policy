@@ -4,6 +4,6 @@ const awsLambda = require('aws-lambda')
 
 mongoose.connect();
 
-_.map([1,2,3], (i) => i * 2);
+_.map([1,2,3], (i) => i * 3);
 
 awsLambda();
