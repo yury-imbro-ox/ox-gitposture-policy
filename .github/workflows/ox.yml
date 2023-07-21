@@ -1,9 +1,7 @@
-name: workflow-with-ox-block-mode
+name: ox-mg
 run-name: OX Block Mode Demo
 on:
   merge_group:
-    branches:
-      - main
 
 jobs:
   ox-block-mode:
