@@ -19,6 +19,8 @@ export class DenialOfServiceVulnerability {
 
 export class IncompleteSanitizationOfString {
     sanitize(input) {
-        return input.replace('{', '').replace('}', '');
+        return input
+            .replace('{', '')
+            .replace('}', '');
     }
 }
