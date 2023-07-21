@@ -2,7 +2,7 @@ export class DynamicCodeExecution {
     methodA() {}
     methodB() {}
     
-    async addFirstLevelItemCloudObj(resource) {
+    async addFirsttLevelItemCloudObj(resource) {
         const data = await this[resource.name]();
         console.log(resource);
         return data;
